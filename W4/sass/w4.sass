@@ -1,0 +1,415 @@
+@import reset
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap')
+
+$main-color: #3F5D45
+$sec-color: #77b182
+$thd-color: #EAF0ED
+
+@mixin breakpoint($point)
+    @if $point == pc
+        @media(min-width: 768px) and (max-width: 1024px)
+            @content
+    @else if $point == pad
+        @media(min-width: 585px) and (max-width: 767px)
+            @content
+    @else if $point == mobile
+        @media(max-width: 584px)
+            @content
+
+*
+    color: $main-color
+    box-sizing: border-box
+body
+    font-family: 'Noto Sans TC', sans-serif
+a
+    text-decoration: none
+.container
+    max-width: 940px
+    margin: 0 auto
+    @include breakpoint(pc)
+        max-width: 90%
+    @include breakpoint(pad)
+        max-width: 80%
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 30px 0
+    .button-toggle
+        display: none
+        @include breakpoint(mobile)
+            display: block
+            width: 20%
+        @include breakpoint(pad)
+            display: block
+            width: 20%
+        a
+            @include breakpoint(mobile)
+                display: block
+                width: 45px
+                height: 45px
+                margin: 0 auto
+            @include breakpoint(pad)
+                display: block
+                width: 45px
+                height: 45px
+                margin: 0 auto
+            img
+                @include breakpoint(mobile)
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    margin: 0 auto
+                @include breakpoint(pad)
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%) 
+    .shopcar
+        display: none
+        @include breakpoint(mobile)
+            display: block
+            width: 20%
+        @include breakpoint(pad)
+            display: block
+            width: 20%
+        a       
+            @include breakpoint(mobile)
+                display: block
+                width: 45px
+                height: 45px
+                margin: 0 auto
+            @include breakpoint(pad)
+                display: block
+                width: 45px
+                height: 45px
+                margin: 0 auto
+            img
+                @include breakpoint(mobile)
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%) 
+                @include breakpoint(pad)
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%) 
+    h1
+        @include breakpoint(mobile)
+            width: 60%
+        .logo
+            background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg') no-repeat
+            background-size: auto
+            width: 220px
+            height: 40px
+            display: block
+            text-indent: 101%
+            overflow: hidden
+            white-space: nowrap
+            @include breakpoint(mobile)
+                background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg') no-repeat
+                width: 175px
+                height: 30px
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+            @include breakpoint(pad)
+                background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg') no-repeat
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+    .menu
+        display: flex
+        align-items: center
+        @include breakpoint(mobile)
+            display: none
+        @include breakpoint(pad)
+            display: none
+        a
+            font-size: 16px
+            line-height: 22px
+            padding: 0 30px
+            font-weight: 600
+            transition: all .2s
+        a:hover
+            color: $sec-color
+            background: $thd-color
+            border-top-left-radius: 50px
+            border-bottom-right-radius: 50px
+.banner
+    img
+        margin-bottom: 60px
+        max-width: 100%
+        height: auto
+        @include breakpoint(mobile)
+            margin-bottom: 0
+.main
+    display: flex
+    justify-content: space-between
+    @include breakpoint(mobile)
+        flex-direction: column
+    .sidemenu
+        width: 33%
+        text-align: center
+        @include breakpoint(pad)
+            width: 45%
+            margin-right: 5%
+        @include breakpoint(mobile)
+            width: 100%
+            margin-bottom: 60px
+        .sidemenu_title
+            background: $main-color
+            padding: 16px 0
+            color: $thd-color
+            font-size: 24px
+            line-height: 40px
+            font-weight: 600
+        li
+            border: 1px solid $thd-color
+            transition: all .5s
+            &:hover
+                background: $thd-color
+            a
+                display: block
+                font-size: 24px
+                line-height: 40px
+                font-weight: 600
+                padding: 16px 0
+                @include breakpoint(pad)
+                    font-size: 16px
+                    line-height: 30px
+    .product
+        width: 66%
+        @include breakpoint(mobile)
+            width: 100%
+        .product_list
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            @include breakpoint(pad)
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+            @include breakpoint(mobile)
+                flex-direction: column
+                flex-wrap: wrap
+                justify-content: space-around
+                align-items: center
+            .product_list_item
+                position: relative
+                width: 48%
+                margin: 0 1%
+                text-align: center
+                @include breakpoint(pad)
+                    width: 100%
+                @include breakpoint(mobile)
+                    width: 80%
+                    margin: 0 10%
+                img
+                    width: 100%
+                .intro
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    font-size: 20px
+                    line-height: 24px
+                    h3
+                        width: 50%
+                        border: 1px solid $thd-color
+                        font-weight: 300
+                        padding: 14px 0
+                    p
+                        width: 50%
+                        border: 1px solid $thd-color
+                        font-weight: 600
+                        padding: 14px 0
+                .addCart
+                    display: block
+                    padding: 16px 0
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 40px
+                    background: $thd-color
+                    margin-bottom: 20px
+                    transition: all .5s
+                    &:hover
+                        color: $thd-color
+                        background: $main-color
+                .fav
+                    position: absolute
+                    right: 22px
+                    top: 19px
+                .star
+                    position: absolute
+                    left: 20px
+                    top: 0
+                    padding: 10px
+                    background: $main-color
+                    color: $thd-color
+                    font-size: 16px
+                    line-height: 20px
+                    font-weight: 600
+                    writing-mode: vertical-lr
+                    letter-spacing: 3px
+        .pagelist 
+            display: flex
+            justify-content: flex-end
+            margin-bottom: 60px
+            @include breakpoint(mobile)
+                justify-content: center
+            img
+                display: block
+                max-width: 100%
+                height: auto
+            li
+                width: 60px
+                text-align: center
+            .marks
+                a
+                    display: block
+                    padding: 17px 18px
+                    transition: all .5s
+                    border: 1px solid transparent
+                    &:hover
+                        border: 1px solid $main-color
+            .number 
+                a
+                    display: block
+                    padding: 16px
+                    font-size: 20px
+                    line-height: 28px
+                    font-weight: 300
+                    transition: all .5s
+                    &:hover
+                        color: $thd-color
+                        background: $main-color
+
+.contact-fluid
+    background: $main-color
+    .contact
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        max-width: 800px
+        padding: 30px 0
+        @include breakpoint(pc)
+            width: 80%
+        @include breakpoint(pad)
+            width: 80%
+        @include breakpoint(mobile)
+            flex-direction: column
+        .subTitle
+            display: flex
+            align-items: center
+            width: 48%
+            @include breakpoint(mobile)
+                width: 80%
+                padding: 0 0 30px
+            img
+                max-width: 40px
+                height: auto
+                margin-right: 20px
+            h3
+                font-size: 24px
+                line-height: 29px
+                font-weight: 500
+                color: $thd-color
+        .subForm
+            position: relative
+            width: 48%
+            @include breakpoint(mobile)
+                width: 80%
+            .txt                
+                width: 75%
+                background-color: $thd-color
+                border: 0 
+                padding: 16px 16px 16px 64px
+            .mailbtn
+                position: absolute
+                transform: translateY(-50%)
+                top: 50%
+                left: 20px
+            .send
+                display: block
+                width: 64px
+                background-color: #FFE180
+                background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true')
+                background-repeat: no-repeat
+                background-position: center
+                height: 100%
+                position: absolute
+                transform: translateY(-50%)
+                top: 50%
+                left: 75%
+.footer
+    background-color: $thd-color
+    .info
+        max-width: 800px
+        margin: 0 auto
+        @include breakpoint(pc)
+            width: 80%
+        @include breakpoint(pad)
+            width: 80%
+        @include breakpoint(mobile)
+        padding: 0 30px
+        .infoContent
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 30px 0
+            .logoAndContact
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
+                height: 220px
+                @include breakpoint(mobile)
+                    width: 100%
+                    height: auto
+                img
+                    max-width: 170px
+                    height: auto
+                    @include breakpoint(mobile)
+                        margin-bottom: 30px
+                .Contactinfo
+                    font-size: 16px
+                    line-height: 24px
+                    font-weight: 500
+            .marketingContent
+                .vert
+                    font-size: 24px
+                    line-height: 29px
+                    font-weight: 900
+                    color: $main-color
+                    -webkit-writing-mode: vertical-rl
+                    writing-mode: vertical-rl
+                    letter-spacing: 2px
+                    @include breakpoint(mobile)
+                        display: none
+        .infoElse
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 30px
+            @include breakpoint(mobile)
+                flex-direction: column
+                align-items: flex-start
+            .socailmediaBtn
+                @include breakpoint(mobile)
+                    margin-bottom: 20px
+                ul
+                    display: table
+                    li
+                        float: left
+                        margin-right: 8px
+                        img
+                            width: 32px
+            
+
+
+// -
+
