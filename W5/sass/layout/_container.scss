@@ -1,0 +1,10 @@
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    @include breakpoint(pc) {
+        max-width: 90%;
+    }
+    @include breakpoint(pad) {
+        max-width: 80%;
+    }
+}

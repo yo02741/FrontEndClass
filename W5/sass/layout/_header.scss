@@ -1,0 +1,191 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    .button-toggle {
+        display: none;
+        @include breakpoint(pad){
+            display: block;
+            width: 20%;
+        }
+        @include breakpoint(mobile){
+            display: block;
+            width: 20%;
+        }   
+        a {
+            @include breakpoint(pad){
+                display: block;
+                width: 45px;
+                height: 45px;
+                margin: 0 auto;
+            }
+            @include breakpoint(mobile){
+                display: block;
+                width: 45px;
+                height: 45px;
+                margin: 0 auto;
+            }             
+        } 
+            img {
+                @include breakpoint(pad){
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                @include breakpoint(mobile){
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    margin: 0 auto;
+                }                   
+            }           
+    }        
+    .shopcar {
+        display: none;
+        @include breakpoint(pad){
+            display: block;
+            width: 20%;
+        }
+        @include breakpoint(mobile){
+            display: block;
+            width: 20%;
+        }      
+        a {
+            @include breakpoint(pad){
+                display: block;
+                width: 45px;
+                height: 45px;
+                margin: 0 auto;
+            }
+            @include breakpoint(mobile){
+                display: block;
+                width: 45px;
+                height: 45px;
+                margin: 0 auto;
+            }
+        }   
+            img {
+                @include breakpoint(pad){
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                @include breakpoint(mobile){
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }      
+            }
+    }
+    h1 {
+        @include breakpoint(mobile){
+            width: 60%;
+        }
+        .logo {
+            background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg') no-repeat;
+            background-size: auto;
+            width: 220px;
+            height: 40px;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            @include breakpoint(pad){
+                background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg') no-repeat;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            @include breakpoint(mobile){
+                background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg') no-repeat;
+                width: 175px;
+                height: 30px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        max-height: 0px;
+        z-index: 999;
+        @include breakpoint(pad){
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            transition: all 0.8s;
+            overflow: hidden;
+            background: white;
+            flex-direction: column;
+        }
+        @include breakpoint(mobile){
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            transition: all 0.8s;
+            overflow: hidden;
+            background: white;
+            flex-direction: column;
+        }
+        li {
+            @include breakpoint(pad){
+                width: 100%;
+            }
+            @include breakpoint(mobile){
+                width: 100%;
+            }
+            a {
+                font-size: 16px;
+                padding: 0 30px;
+                font-weight: 600;
+                transition: all .2s;
+                @include breakpoint(pad){
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                @include breakpoint(mobile){
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+            }
+            &:hover {
+                color: $primary2-color;
+                background: $primary3-color;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+        li:hover {
+            @include breakpoint(pad){
+                background-color: $primary3-color;
+            }
+            @include breakpoint(mobile){
+                background-color: $primary3-color;
+            }
+        }
+        li:nth-child(4) {
+            @include breakpoint(pad){
+                display: none;
+            }
+            @include breakpoint(mobile){
+                display: none;
+            }
+        }
+    }
+}
+
+.active {
+    max-height: 200px;
+}

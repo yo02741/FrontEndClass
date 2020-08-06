@@ -1,0 +1,156 @@
+.contact-fluid {
+    background: $primary-color;
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 30px 0;
+        @include breakpoint(pc){
+            width: 80%;
+        }
+        @include breakpoint(pad){
+            width: 80%;
+        }
+        @include breakpoint(mobile){
+            flex-direction: column;
+        }
+        .subTitle {
+            display: flex;
+            align-items: center;
+            width: 48%;
+            @include breakpoint(mobile){
+                width: 80%;
+                padding: 0 0 30px;
+            }
+            img {
+                max-width: 40px;
+                height: auto;
+                margin-right: 20px;
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                color: $primary3-color;
+            }                
+        }            
+        .subForm {
+            position: relative;
+            width: 48%;
+            @include breakpoint(mobile){
+                width: 80%;
+            }
+            .txt {
+                width: 75%;
+                background-color: $primary3-color;
+                border: 0 ;
+                padding: 16px 16px 16px 64px;
+            }
+            .mailbtn {
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                left: 20px;
+            }
+            .send {
+                display: block;
+                width: 64px;
+                background-color: $secondary-color;
+                background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true');
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100%;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                left: 75%;
+            }
+        }
+    } 
+}
+    
+.footer {
+    background-color: $primary3-color;
+}
+    .info {
+        max-width: 800px;
+        margin: 0 auto;
+        @include breakpoint(pc){
+            width: 80%;
+        }
+        @include breakpoint(pad){
+            width: 80%;
+        }
+        @include breakpoint(mobile){
+            padding: 0 30px;
+        }
+        .infoContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            .logoAndContact {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 220px;
+                @include breakpoint(mobile){
+                    width: 100%;
+                    height: auto;
+                }
+                img {
+                    max-width: 170px;
+                    height: auto;
+                    @include breakpoint(mobile){
+                        margin-bottom: 30px;
+                    }
+                } 
+                .Contactinfo {
+                    font-size: 16px;
+                    font-weight: 500;
+                } 
+            }
+                
+            .marketingContent {
+                .vert {
+                    font-size: 24px;
+                    font-weight: 900;
+                    color: $primary-color;
+                    -webkit-writing-mode: vertical-rl;
+                    writing-mode: vertical-rl;
+                    letter-spacing: 2px;
+                    @include breakpoint(mobile){
+                        display: none;
+                    }
+                }
+            } 
+        } 
+        .infoElse {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            @include breakpoint(mobile){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .socailmediaBtn{
+                @include breakpoint(mobile){
+                    margin-bottom: 20px;
+                }
+                ul {
+                    display: table;
+                    li {
+                        float: left;
+                        margin-right: 8px;
+                        img {
+                            width: 32px;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+        
