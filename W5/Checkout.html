@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Sweetaste</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/w5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header" data-aos="fade-down">
+            <div class="button-toggle">
+                <a href="#"><img src="img/toggle.png" alt=""></a>
+            </div>
+            <h1><a href="Product.html" class="logo">Sweetaste</a></h1>
+            <ul class="menu">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">甜點</a></li>
+                <li><a href="#">登入</a></li>
+                <li><a href="#"><img src="img/shopping_cart.png" alt="購物車"></a></li>
+            </ul>
+            <div class="shopcar">
+                <a href="#"><img src="img/shopping_cart.png" alt="購物車"></a>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="receipt" data-aos="fade-right">
+                <div class="receiptContent">
+                    <div class="Title">
+                        <h2 class="titleTxt">發票</h2>
+                        <ul class="progressbar">
+                            <li><i class="fas fa-check-circle"></i></i></li>
+                            <li><i class="fas fa-check-circle"></i></i></li>
+                            <li><i class="far fa-circle"></i></li>
+                        </ul>
+                    </div>
+                    <div class="receiptType">
+                        <a href="#" id="ElectronicInvoice">電子發票</a>
+                        <a href="#" id="MailInvoice">郵寄發票</a>
+                    </div>
+                    <div class="receiptData">
+                        <h3>電子郵件信箱</h3>
+                        <input type="text" class="textArea" placeholder="example@email.com">
+                        <h3>統一編號（選填）</h3>
+                        <input type="text" class="textArea" placeholder="12345678">
+                    </div>
+                </div>
+                <div class="receiptSend">
+                    <a href="#" class="send">確認結帳</a>
+                </div>                
+            </div>
+            <div class="order" data-aos="fade-left">
+                <div class="orderDataTxt">
+                    <h2 class="title">訂單摘要</h2>
+                    <ul class="content">
+                        <li class="subtotal">
+                            <p class="subtotalTxt">小計</p>
+                            <p class="subtotalNum">NT$ 2,700</p>
+                        </li>
+                        <li class="shipping">
+                            <p class="shippingTxt">運費</p>
+                            <p class="shippingNum">NT$ 300</p>
+                        </li>
+                        <li class="total">
+                            <p class="totalTxt">總計</p>
+                            <p class="totalNum">NT$ 3,000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="orderDataContent">
+                    <h2 class="title">購物清單</h2>
+                    <ul class="content">
+                        <li class="items">
+                            <div class="items-img">
+                                <img src="img/d7.png" alt="">
+                            </div>
+                            <div class="items-intro">
+                                <div class="name">焦糖馬卡龍（2）</div>
+                                <div class="price">NT$ 900</div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="items-img">
+                                <img src="img/d5.png" alt="">
+                            </div>
+                            <div class="items-intro">
+                                <div class="name">焦糖馬卡龍（2）</div>
+                                <div class="price">NT$ 900</div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="items-img">
+                                <img src="img/d3.png" alt="">
+                            </div>
+                            <div class="items-intro">
+                                <div class="name">焦糖馬卡龍（2）</div>
+                                <div class="price">NT$ 900</div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="items-img">
+                                <img src="img/d3.png" alt="">
+                            </div>
+                            <div class="items-intro">
+                                <div class="name">焦糖馬卡龍（2）</div>
+                                <div class="price">NT$ 900</div>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <div class="items-img">
+                                <img src="img/d3.png" alt="">
+                            </div>
+                            <div class="items-intro">
+                                <div class="name">焦糖馬卡龍（2）</div>
+                                <div class="price">NT$ 900</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-fluid" data-aos="fade-up">
+        <div class="contact">
+            <div class="subTitle">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="">
+                <h3 class="sub">訂閱你我的甜蜜郵件</h3>
+            </div>
+            <div class="subForm">
+                <form action="#">
+                    <input type="text" class="txt" id="mail">
+                    <img class="mailbtn" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt="">
+                    <a href="#" class="send"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" data-aos="fade-up">
+        <div class="info">
+            <div class="infoContent">
+                <div class="logoAndContact">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg" alt="">
+                    <div class="Contactinfo">
+                        <p>07-1234-5678</p>
+                        <p>sweetaste@email.com</p>
+                        <p>800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                </div>
+                <div class="marketingContent">
+                    <p class="vert">今天是個 —— <br>
+                        &ensp;吃甜點的好日子。</p>
+                </div>
+            </div>
+            <div class="infoElse">
+                <div class="socailmediaBtn">
+                    <ul>
+                        <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg" alt=""></a></li>
+                        <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/aos.js"></script>
+</body>
+</html>
