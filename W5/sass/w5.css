@@ -917,12 +917,12 @@ a {
 }
 
 @media (min-width: 585px) and (max-width: 640px) {
-  .container {
+  .checkout-container {
     max-width: 100%;
   }
 }
 
-.main {
+.checkout-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,30 +933,30 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main {
+  .checkout-main {
     padding: 30px 0;
   }
 }
 
 @media (min-width: 585px) and (max-width: 767px) {
-  .main {
+  .checkout-main {
     padding: 30px 0;
   }
 }
 
 @media (min-width: 585px) and (max-width: 640px) {
-  .main {
+  .checkout-main {
     padding: 0;
   }
 }
 
 @media (max-width: 584px) {
-  .main {
+  .checkout-main {
     padding: 0;
   }
 }
 
-.main .receipt {
+.checkout-main .receipt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,23 +970,23 @@ a {
 }
 
 @media (min-width: 585px) and (max-width: 640px) {
-  .main .receipt {
+  .checkout-main .receipt {
     width: 100%;
   }
 }
 
 @media (max-width: 584px) {
-  .main .receipt {
+  .checkout-main .receipt {
     width: 100%;
   }
 }
 
-.main .receipt .receiptContent {
+.checkout-main .receipt .receiptContent {
   padding: 30px 40px 0px;
   background-color: #3F5D45;
 }
 
-.main .receipt .receiptContent .Title {
+.checkout-main .receipt .receiptContent .Title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,13 +999,13 @@ a {
   margin-bottom: 30px;
 }
 
-.main .receipt .receiptContent .Title .titleTxt {
+.checkout-main .receipt .receiptContent .Title .titleTxt {
   width: 50%;
   font-size: 50px;
   color: #EAF0ED;
 }
 
-.main .receipt .receiptContent .Title .progressbar {
+.checkout-main .receipt .receiptContent .Title .progressbar {
   width: 50%;
   height: 1px;
   border-top: 1px solid #EAF0ED;
@@ -1020,13 +1020,13 @@ a {
           align-items: center;
 }
 
-.main .receipt .receiptContent .Title .progressbar i {
+.checkout-main .receipt .receiptContent .Title .progressbar i {
   color: #EAF0ED;
   background-color: #3F5D45;
   font-size: 20px;
 }
 
-.main .receipt .receiptContent .receiptType {
+.checkout-main .receipt .receiptContent .receiptType {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,7 +1034,7 @@ a {
   margin-bottom: 30px;
 }
 
-.main .receipt .receiptContent .receiptType a {
+.checkout-main .receipt .receiptContent .receiptType a {
   display: block;
   width: 50%;
   font-size: 20px;
@@ -1047,22 +1047,22 @@ a {
 }
 
 @media (min-width: 585px) and (max-width: 767px) {
-  .main .receipt .receiptContent .receiptType a {
+  .checkout-main .receipt .receiptContent .receiptType a {
     padding: 14px 40px;
   }
 }
 
-.main .receipt .receiptContent .receiptType a:hover {
+.checkout-main .receipt .receiptContent .receiptType a:hover {
   background-color: #EAF0ED;
   color: #3F5D45;
 }
 
-.main .receipt .receiptContent .receiptType a.active {
+.checkout-main .receipt .receiptContent .receiptType a.active {
   background-color: #EAF0ED;
   color: #3F5D45;
 }
 
-.main .receipt .receiptContent .receiptData {
+.checkout-main .receipt .receiptContent .receiptData {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,21 +1072,21 @@ a {
           flex-direction: column;
 }
 
-.main .receipt .receiptContent .receiptData h3 {
+.checkout-main .receipt .receiptContent .receiptData h3 {
   width: 100%;
   font-size: 20px;
   color: #EAF0ED;
   margin-bottom: 8px;
 }
 
-.main .receipt .receiptContent .receiptData .textArea {
+.checkout-main .receipt .receiptContent .receiptData .textArea {
   width: 100%;
   padding: 17px 20px;
   margin-bottom: 16px;
   color: #8DA291;
 }
 
-.main .receipt .receiptSend .send {
+.checkout-main .receipt .receiptSend .send {
   position: relative;
   overflow: hidden;
   display: block;
@@ -1101,7 +1101,7 @@ a {
   transition: all .5s;
 }
 
-.main .receipt .receiptSend .send:after {
+.checkout-main .receipt .receiptSend .send:after {
   background: #77b182;
   content: "";
   height: 155px;
@@ -1117,34 +1117,34 @@ a {
   z-index: 10;
 }
 
-.main .receipt .receiptSend .send:hover {
+.checkout-main .receipt .receiptSend .send:hover {
   letter-spacing: 10px;
   border: 2px solid #77b182;
 }
 
-.main .receipt .receiptSend .send:hover:after {
+.checkout-main .receipt .receiptSend .send:hover:after {
   left: 120%;
   -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.main .order {
+.checkout-main .order {
   width: 40%;
 }
 
 @media (max-width: 584px) {
-  .main .order {
+  .checkout-main .order {
     display: none;
   }
 }
 
 @media (min-width: 585px) and (max-width: 640px) {
-  .main .order {
+  .checkout-main .order {
     display: none;
   }
 }
 
-.main .order .orderDataTxt {
+.checkout-main .order .orderDataTxt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,7 +1156,7 @@ a {
   margin-bottom: 20px;
 }
 
-.main .order .orderDataTxt .title {
+.checkout-main .order .orderDataTxt .title {
   width: 100%;
   padding: 16px 100px;
   background-color: #EAF0ED;
@@ -1168,18 +1168,18 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main .order .orderDataTxt .title {
+  .checkout-main .order .orderDataTxt .title {
     padding: 16px 80px;
   }
 }
 
 @media (min-width: 585px) and (max-width: 767px) {
-  .main .order .orderDataTxt .title {
+  .checkout-main .order .orderDataTxt .title {
     padding: 16px 50px;
   }
 }
 
-.main .order .orderDataTxt .content {
+.checkout-main .order .orderDataTxt .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1190,7 +1190,7 @@ a {
   padding: 16px 20px;
 }
 
-.main .order .orderDataTxt .content li {
+.checkout-main .order .orderDataTxt .content li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,27 +1202,27 @@ a {
           align-items: center;
 }
 
-.main .order .orderDataTxt .content .subtotal, .main .order .orderDataTxt .content .shipping {
+.checkout-main .order .orderDataTxt .content .subtotal, .checkout-main .order .orderDataTxt .content .shipping {
   font-size: 16px;
   margin-bottom: 8px;
 }
 
-.main .order .orderDataTxt .content .subtotal p, .main .order .orderDataTxt .content .shipping p {
+.checkout-main .order .orderDataTxt .content .subtotal p, .checkout-main .order .orderDataTxt .content .shipping p {
   color: #8DA291;
   font-weight: 300;
 }
 
-.main .order .orderDataTxt .content .total {
+.checkout-main .order .orderDataTxt .content .total {
   font-size: 20px;
   margin-top: 8px;
 }
 
-.main .order .orderDataTxt .content .total p {
+.checkout-main .order .orderDataTxt .content .total p {
   color: #8DA291;
   font-weight: 600;
 }
 
-.main .order .orderDataContent {
+.checkout-main .order .orderDataContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1233,7 @@ a {
   border: 1px solid #EAF0ED;
 }
 
-.main .order .orderDataContent .title {
+.checkout-main .order .orderDataContent .title {
   width: 100%;
   padding: 16px 100px;
   background-color: #EAF0ED;
@@ -1245,18 +1245,18 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main .order .orderDataContent .title {
+  .checkout-main .order .orderDataContent .title {
     padding: 16px 80px;
   }
 }
 
 @media (min-width: 585px) and (max-width: 767px) {
-  .main .order .orderDataContent .title {
+  .checkout-main .order .orderDataContent .title {
     padding: 16px 50px;
   }
 }
 
-.main .order .orderDataContent .content {
+.checkout-main .order .orderDataContent .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1269,7 +1269,7 @@ a {
   overflow-y: scroll;
 }
 
-.main .order .orderDataContent .content .items {
+.checkout-main .order .orderDataContent .content .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,12 +1284,12 @@ a {
   min-height: 80px;
 }
 
-.main .order .orderDataContent .content .items .items-img {
+.checkout-main .order .orderDataContent .content .items .items-img {
   width: 47%;
   height: 80px;
 }
 
-.main .order .orderDataContent .content .items .items-img img {
+.checkout-main .order .orderDataContent .content .items .items-img img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -1299,16 +1299,16 @@ a {
           transform: translateY(-50%);
 }
 
-.main .order .orderDataContent .content .items .items-intro {
+.checkout-main .order .orderDataContent .content .items .items-intro {
   width: 47%;
 }
 
-.main .order .orderDataContent .content .items .items-intro .name {
+.checkout-main .order .orderDataContent .content .items .items-intro .name {
   font-weight: 300;
   font-size: 16px;
 }
 
-.main .order .orderDataContent .content .items .items-intro .price {
+.checkout-main .order .orderDataContent .content .items .items-intro .price {
   font-weight: 600;
   font-size: 20px;
 }

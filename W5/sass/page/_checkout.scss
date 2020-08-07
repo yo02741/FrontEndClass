@@ -1,9 +1,9 @@
-.container {
+.checkout-container{
     @media(min-width: 585px) and (max-width: 640px){
         max-width: 100%;
     }
 }
-.main{
+.checkout-main{
     display: flex;
     justify-content: space-between;
     padding: 30px 80px;
