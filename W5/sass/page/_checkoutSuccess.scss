@@ -1,0 +1,105 @@
+.checkoutSuccess-container {
+    @include breakpoint(pad) {
+        max-width: 100%;
+    }
+}
+
+
+.checkoutSuccess-main {
+    position: relative;
+    margin: 0 auto 60px;
+    width: 100%;
+    min-height: 460px;
+    background: url('https://bit.ly/2P7GhNd');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint(mobile){
+        margin-bottom: 0;
+    }
+    @include breakpoint(pad){
+        margin-bottom: 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 33%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        @include breakpoint(mobile){
+            width: 100%;
+        }
+        .SuccessProgressbar {
+            margin: 0 auto 33px;
+            width: 195px;
+            height: 1px;
+            border-top: 1.5px solid $primary-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i {
+                border-radius: 999em;
+                color: $primary-color;
+                background-color: $primary3-color;
+                font-size: 20px;
+            }
+            
+        }
+        h2 {
+            color: $primary-color;
+            font-size: 45px;
+            font-weight: 900;
+            margin-bottom: 50px;
+            @include breakpoint(mobile){
+                margin-bottom: 0;
+                font-size: 35px;
+            }
+            @include breakpoint(pad){
+                margin-bottom: 35px;
+                font-size: 35px;
+            }
+        }
+        .checkoutSuccess-btn {
+            width: 100%;
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 15px 0;
+            background-color: $secondary-color;
+            border: 2px solid transparent;
+            transition: all .5s;
+            &:hover {
+                border: 2px solid $primary2-color;
+            }
+            @include breakpoint(mobile){
+                display: none;
+            }
+        }
+    }
+    .btn-pad-mobile {
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px 0;
+        background-color: $secondary-color;
+        border: 2px solid transparent;
+        transition: all .5s;
+        &:hover {
+            border: 2px solid $primary2-color;
+        }
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include breakpoint(mobile){
+            display: block;
+        }
+    }
+}

@@ -1312,4 +1312,155 @@ a {
   font-weight: 600;
   font-size: 20px;
 }
+
+@media (min-width: 585px) and (max-width: 767px) {
+  .checkoutSuccess-container {
+    max-width: 100%;
+  }
+}
+
+.checkoutSuccess-main {
+  position: relative;
+  margin: 0 auto 60px;
+  width: 100%;
+  min-height: 460px;
+  background: url("https://bit.ly/2P7GhNd");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 584px) {
+  .checkoutSuccess-main {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 585px) and (max-width: 767px) {
+  .checkoutSuccess-main {
+    margin-bottom: 0;
+  }
+}
+
+.checkoutSuccess-main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (max-width: 584px) {
+  .checkoutSuccess-main .content {
+    width: 100%;
+  }
+}
+
+.checkoutSuccess-main .content .SuccessProgressbar {
+  margin: 0 auto 33px;
+  width: 195px;
+  height: 1px;
+  border-top: 1.5px solid #3F5D45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkoutSuccess-main .content .SuccessProgressbar i {
+  border-radius: 999em;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-size: 20px;
+}
+
+.checkoutSuccess-main .content h2 {
+  color: #3F5D45;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 584px) {
+  .checkoutSuccess-main .content h2 {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 585px) and (max-width: 767px) {
+  .checkoutSuccess-main .content h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+  }
+}
+
+.checkoutSuccess-main .content .checkoutSuccess-btn {
+  width: 100%;
+  color: #3F5D45;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  background-color: #FFE180;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.checkoutSuccess-main .content .checkoutSuccess-btn:hover {
+  border: 2px solid #77b182;
+}
+
+@media (max-width: 584px) {
+  .checkoutSuccess-main .content .checkoutSuccess-btn {
+    display: none;
+  }
+}
+
+.checkoutSuccess-main .btn-pad-mobile {
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: #3F5D45;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  background-color: #FFE180;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.checkoutSuccess-main .btn-pad-mobile:hover {
+  border: 2px solid #77b182;
+}
+
+@media (max-width: 584px) {
+  .checkoutSuccess-main .btn-pad-mobile {
+    display: block;
+  }
+}
 /*# sourceMappingURL=w5.css.map */
