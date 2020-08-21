@@ -1,0 +1,104 @@
+.productdetail {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @include breakpoint(pad){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.detail-piclist .pic{
+    margin-bottom: 30px;
+    @include breakpoint(pad){
+        margin-bottom: 0;
+    }
+    &:nth-child(1){
+        background: url('../img/productdetail/p-d-1-2x.png') no-repeat;
+        background-size: 100% auto;
+        width: 100%;
+        padding-top: 66%;
+    }
+    &:nth-child(2) .pic-half{
+        &:nth-child(1){
+            background: url('../img/productdetail/p-d-2-2x.png') no-repeat;
+            background-size: 100% auto;
+            width: 48%;            
+            padding-top: 87%;
+            @include breakpoint(mobile){
+                width: 100%;
+                padding-top: 185%;
+            }
+        }
+    }
+    &:nth-child(2) .pic-half{
+        &:nth-child(2){
+            background: url('../img/productdetail/p-d-3-2x.png') no-repeat;
+            background-size: 100% auto;
+            width: 48%;
+            padding-top: 87%;
+            @include breakpoint(mobile){
+                width: 100%;
+                padding-top: 185%;
+            }
+        }
+    }
+    &:nth-child(3){
+        background: url('../img/productdetail/p-d-1-2x.png') no-repeat;
+        background-size: 100% auto;
+        width: 100%;    
+        padding-top: 66%;
+    }
+}
+
+.detail-intro{
+    .txt {
+        margin-bottom: 32px;
+    }
+    .detail-sellingprice {
+        margin-bottom: 12px;
+    }
+
+    .notice {
+        font-size: 16px;
+        .title {
+            font-weight: 600;
+        }
+        .txt {
+            font-weight: 300;
+        }
+    }
+}
+
+.quantity-group{
+    margin-bottom: 8px;
+    .num{
+        width: 50%;
+        padding: 16px;
+        border: 1px solid $primary;
+        border-radius: 4px 0 0 4px;
+    }
+    .addcart{
+        display: block;
+        text-align: center;
+        background: $primary;
+        border: 1px solid $primary;
+        border-radius: 0 4px 4px 0;
+        color: #FFF;
+        font-size: 16px;
+        width: 50%;
+        padding: 14px 0;
+        transition: all .5s;
+        &:hover {
+            background: $primary-d;
+        }
+    }
+}
+
+.addheart {
+    display: block;
+    margin-bottom: 80px;
+    transition: all .5s;
+    @include breakpoint(pad){
+        margin-bottom: 40px;
+    }
+}

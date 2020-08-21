@@ -11833,4 +11833,130 @@ a {
   background: #FFF;
   text-decoration: underline !important;
 }
+
+.productdetail {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .productdetail {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.detail-piclist .pic {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .detail-piclist .pic {
+    margin-bottom: 0;
+  }
+}
+
+.detail-piclist .pic:nth-child(1) {
+  background: url("../img/productdetail/p-d-1-2x.png") no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  padding-top: 66%;
+}
+
+.detail-piclist .pic:nth-child(2) .pic-half:nth-child(1) {
+  background: url("../img/productdetail/p-d-2-2x.png") no-repeat;
+  background-size: 100% auto;
+  width: 48%;
+  padding-top: 87%;
+}
+
+@media (max-width: 584px) {
+  .detail-piclist .pic:nth-child(2) .pic-half:nth-child(1) {
+    width: 100%;
+    padding-top: 185%;
+  }
+}
+
+.detail-piclist .pic:nth-child(2) .pic-half:nth-child(2) {
+  background: url("../img/productdetail/p-d-3-2x.png") no-repeat;
+  background-size: 100% auto;
+  width: 48%;
+  padding-top: 87%;
+}
+
+@media (max-width: 584px) {
+  .detail-piclist .pic:nth-child(2) .pic-half:nth-child(2) {
+    width: 100%;
+    padding-top: 185%;
+  }
+}
+
+.detail-piclist .pic:nth-child(3) {
+  background: url("../img/productdetail/p-d-1-2x.png") no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  padding-top: 66%;
+}
+
+.detail-intro .txt {
+  margin-bottom: 32px;
+}
+
+.detail-intro .detail-sellingprice {
+  margin-bottom: 12px;
+}
+
+.detail-intro .notice {
+  font-size: 16px;
+}
+
+.detail-intro .notice .title {
+  font-weight: 600;
+}
+
+.detail-intro .notice .txt {
+  font-weight: 300;
+}
+
+.quantity-group {
+  margin-bottom: 8px;
+}
+
+.quantity-group .num {
+  width: 50%;
+  padding: 16px;
+  border: 1px solid #916000;
+  border-radius: 4px 0 0 4px;
+}
+
+.quantity-group .addcart {
+  display: block;
+  text-align: center;
+  background: #916000;
+  border: 1px solid #916000;
+  border-radius: 0 4px 4px 0;
+  color: #FFF;
+  font-size: 16px;
+  width: 50%;
+  padding: 14px 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.quantity-group .addcart:hover {
+  background: #694600;
+}
+
+.addheart {
+  display: block;
+  margin-bottom: 80px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+@media (max-width: 767px) {
+  .addheart {
+    margin-bottom: 40px;
+  }
+}
 /*# sourceMappingURL=all.css.map */
