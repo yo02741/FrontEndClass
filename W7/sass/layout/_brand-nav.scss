@@ -1,0 +1,17 @@
+.brand-nav {
+    background-color: $primary;
+    .brand-list {
+        li {
+            list-style: none;
+        }
+    }
+    .brand-item {
+        display: block;
+        padding: 14px;
+        color: #FFF;
+        font-size: 20px;
+        &:hover {
+            color: $secondary-l;
+        }
+    }
+}
