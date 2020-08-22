@@ -1,0 +1,180 @@
+.member {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @include breakpoint(pad){
+        padding-top: 40px;  
+        padding-bottom: 40px;
+    }
+}
+
+.member-func .member-func-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: $secondary;
+    margin-bottom: 28px;
+}
+
+.member-func .member-func-item{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: $secondary;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+    padding: 2px 0;
+    margin-bottom: 24px;
+    &:hover {
+        color: $secondary-d;
+        border-bottom: 2px solid $primary-l;
+    }
+    @media (max-width: 991px){
+        width: 33%;
+    }
+}
+
+.func-detail {
+    &-title {
+        border-bottom: 1px solid #818A91;
+        .txt {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.func-detail .change-pwd-title{
+    border-bottom: 1px solid #818A91;
+    .txt {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+
+.func-detail-content .item {
+    display: flex;
+    align-items: flex-start;
+    width: 75%;
+    list-style: none;
+    padding: 10px 0;
+    color: #818A91;
+    @include breakpoint(pad){
+        width: 100%;
+    }
+    h3 {
+        display: inline-block;
+        font-size: 16px;
+    }
+    p {
+        display: inline-block;
+    }
+    input , select {
+        padding: 8px;
+        border: 1px solid #CED4DA;
+        border-radius: 4px;
+        color: #818A91;
+    }
+}
+
+.change-pwd-content .item {
+    display: flex;
+    align-items: flex-start;
+    width: 75%;
+    list-style: none;
+    padding: 10px 0;
+    color: #818A91;
+    @include breakpoint(pad){
+        width: 100%;
+    }
+    input , select {
+        padding: 8px;
+        border: 1px solid #CED4DA;
+        border-radius: 4px;
+        color: #818A91;
+    }
+}
+
+
+.member-btn {
+    color: #FFF;
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    padding: 8px 48px;
+    transition: all .5s;
+    &:hover {
+        color: #FFF;
+        background: $primary-d;
+    }
+}
+
+.record .member-id-group {
+    color: #818A91;
+    i {
+        display: inline-block;
+        color: black;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .member-id-title {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .member-id {
+        font-size: 20px;
+        color: $secondary;
+        font-weight: 600;
+    }
+}
+
+.record .member-record-group .item{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #818A91;
+    .item-title{
+        width: 40%;
+        font-size: 16px;
+    }
+    .item-content{
+        width: 60%;
+        font-size: 16px;
+    }
+    .item-ps{
+        width: 100%;
+        font-size: 14px;
+        color: #A5A5A5;
+    }
+}
+
+.item-content-ml25p{
+    margin-left: 25%;
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label::before {
+    content: "\2714";
+    border: 1px solid $secondary-l;
+    border-radius: 3px;
+    display: inline-block;
+    width: 25px;
+    padding-left: 5px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background: $primary;
+    color: #FFF;
+}

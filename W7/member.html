@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - D’PERFUME</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/all.css">
+</head>
+<body>
+    <div class="container-fluid container-lg header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <h1 class="mb-0"><a href="index.html" class="logo">D’PERFUME</a></h1>
+            <div class="func_group d-flex align-items-center">
+            <a class="nav-item nav-link mr-3" href="#"><i class="fas fa-shopping-cart d-block d-lg-none"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link order-lg-1" href="productlist.html"><i class="fas fa-tshirt d-none d-lg-inline-block"></i>Product</a>
+                <a class="nav-item nav-link order-last order-lg-2" href="login.html"><i class="fas fa-user-alt d-none d-lg-inline-block"></i>log in</a>
+                <a class="nav-item nav-link order-lg-3" href="#"><i class="fas fa-heart d-none d-lg-inline-block"></i>Wishlist</a>
+                <a class="nav-item nav-link d-block d-lg-none" href="#">Blog</a>
+                <a class="nav-item nav-link d-block d-lg-none" href="#">Contact</a>
+                <a class="nav-item nav-link d-none d-lg-inline-block order-lg-4" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid brand-nav d-none d-md-block">
+        <ul class="container-fluid container-lg d-flex brand-list mb-0 pl-0 pr-0">
+            <li><a href="#" class="brand-item">CHANEL</a></li>
+            <li><a href="#" class="brand-item">Jo Malone</a></li>
+            <li><a href="#" class="brand-item">Curology</a></li>
+            <li><a href="#" class="brand-item">Dior</a></li>
+            <li><a href="#" class="brand-item">Chloe</a></li>
+            <li><a href="#" class="brand-item">ZARA</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid container-md member">
+        <div class="row">
+            <div class="col-12 col-lg-2 d-flex flex-row flex-lg-column member-func">
+                <h2 class="member-func-title d-none d-lg-block">會員中心</h2>
+                <a href="#" class="member-func-item text-center text-lg-left">會員資料修改</a>
+                <a href="#" class="member-func-item text-center text-lg-left">訂單查詢</a>
+                <a href="#" class="member-func-item text-center text-lg-left">退／換貨申請</a>
+            </div>
+            <div class="col-12 col-lg-7 func-detail order-2 order-lg-1">
+                <div class="func-detail-title">
+                    <h3 class="txt">個人資料修改</h3>
+                </div>
+                <ul class="func-detail-content py-3 pl-0">
+                    <li class="item">
+                        <h3 class="item-title mb-2 w-25 px-lg-0">會員帳號</h3>
+                        <p class="item-content mb-0 w-75 px-lg-0">email@example.com</p>
+                    </li>
+                    <li class="item">
+                        <label for="name" class="item-title w-25 px-lg-0">會員姓名</label>
+                        <input type="text" id="name" class="item-content w-75">
+                    </li>
+                    <li class="item">
+                        <label for="gender" class="item-title w-25 px-lg-0">會員性別</label>
+                        <div class="item-content w-75 px-lg-0">
+                            <select id="gender">
+                                <option value="" selected disabled>請選擇性別</option>
+                                <option value="male">男</option>
+                                <option value="female">女</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <label for="email" class="item-title w-25 px-lg-0">電子信箱</label>
+                        <input type="email" id="email" class="item-content w-75" placeholder="email@example.com">
+                    </li>
+                    <li class="item">
+                        <label for="phone" class="item-title w-25 px-lg-0">手機號碼</label>
+                        <input type="number" class="item-content w-75" id="phone">
+                    </li>   
+                    <li class="item">
+                        <label for="contactaddress" class="item-title w-25 px-lg-0">聯絡地址</label>
+                        <div class="item-content d-flex flex-column w-75 px-lg-0">
+                            <select id="contactaddress" class="w-50 mb-2">
+                                <option selected disabled>Choose...</option>
+                                <option>台灣及離島</option>
+                            </select>
+                            <div class="cityarea d-flex">
+                                <select id="inputCity" class="w-50 mb-2 mr-2">
+                                    <option selected disabled>Choose...</option>
+                                </select>
+                                <select id="inputArea" class="w-50 mb-2">
+                                    <option selected disabled>Choose...</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="請輸入地址" class="col-lg-12">
+                        </div>
+                    </li>  
+                    <li class="item align-items-center">
+                        <div class="item-content item-content-ml25p">
+                            <input type="checkbox" class="mb-0" id="will">
+                            <label for="will" class="mb-0">我願意收到最新優惠情報</label>
+                        </div>                        
+                    </li>
+                    <li class="item">
+                        <label for="deliveryaddress" class="item-title w-25 px-lg-0">配送地址</label>
+                        <div class="item-content d-flex flex-column w-75 px-lg-0">
+                            <select id="deliveryaddress" class="w-50 mb-2">
+                                <option selected disabled>Choose...</option>
+                                <option>台灣及離島</option>
+                            </select>
+                            <div class="cityarea d-flex">
+                                <select id="inputCity" class="w-50 mb-2 mr-2">
+                                    <option selected disabled>Choose...</option>
+                                </select>
+                                <select id="inputArea" class="w-50 mb-2">
+                                    <option selected disabled>Choose...</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="請輸入地址" class="col-lg-12">
+                        </div>
+                    </li>  
+                    <li class="item">
+                        <div class="item-content item-content-ml25p">
+                            <a href="#" class="member-btn" id="changeprofile">確定修改</a>
+                        </div>
+                    </li>  
+                </ul>
+
+
+                <div class="change-pwd-title">
+                    <h3 class="txt">修改密碼</h3>
+                </div>
+                <ul class="change-pwd-content py-3 pl-0">
+                    <li class="item">
+                        <label for="pwd-old" class="item-title mb-2 w-25 px-lg-0">舊密碼</label>
+                        <input type="password" id="pwd-old" class="item-content w-75">
+                    </li>
+                    <li class="item">
+                        <label for="pwd-new" class="item-title mb-2 w-25 px-lg-0">新密碼</label>
+                        <input type="password" id="pwd-new" class="item-content w-75">
+                    </li>
+                    <li class="item">
+                        <label for="pwd-new-confirm" class="item-title mb-2 w-25 px-lg-0">確認新密碼</label>
+                        <input type="password" id="pwd-new-confirm" class="item-content w-75">
+                    </li>
+                    <li class="item">
+                        <div class="item-content item-content-ml25p">
+                            <a href="#" class="member-btn" id="changepwd">變更密碼</a>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 record order-1 order-lg-2">
+                <div class="member-id-group d-flex flex-column mb-4">
+                    <h2 class="member-id-title mb-0"><i class="fas fa-user-alt"></i>會員編碼</h2>
+                    <p class="member-id mb-0">T00020080615</p>
+                </div>       
+                <div class="member-record-group">
+                    <ul class="pl-0">
+                        <li class="item">
+                            <h3 class="item-title">購物車</h3>
+                            <p class="item-content">56</p>
+                        </li>
+                        <li class="item">
+                            <h3 class="item-title">我的收藏</h3>
+                            <p class="item-content">23</p>
+                        </li>
+                        <li class="item">
+                            <h3 class="item-title">已完成訂單</h3>
+                            <p class="item-content">8</p>
+                        </li>
+                        <li class="item">
+                            <h3 class="item-title">會員紅利</h3>
+                            <p class="item-content">2680</p>
+                        </li>
+                        <li class="item">
+                            <h3 class="item-title">專屬邀請碼</h3>
+                            <p class="item-content">TK2075</p>
+                            <p class="item-ps">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+                        </li>
+                    </ul>
+                </div>          
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="footer">
+      <div class="container">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+          <div class="d-flex align-items-center logo-footer">
+            <h2 class="mb-0"><a href="index.html" class="logo">D’PERFUME</a></h2>
+            <p class="mb-0">© 2020. All Rights Reserved.</p>
+          </div>
+          <div class="function-group d-none d-md-block">
+            <ul class="d-flex mb-0">
+              <li><a href="productlist.html">Poduct</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

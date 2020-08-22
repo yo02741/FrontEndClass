@@ -8916,6 +8916,10 @@ button.bg-dark:focus {
   width: 25% !important;
 }
 
+.w-33 {
+  width: 33% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -8934,6 +8938,10 @@ button.bg-dark:focus {
 
 .h-25 {
   height: 25% !important;
+}
+
+.h-33 {
+  height: 33% !important;
 }
 
 .h-50 {
@@ -11699,6 +11707,223 @@ a {
 
 .login-form .login-submit:hover {
   background-color: #694600;
+}
+
+.member {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .member {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.member-func .member-func-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8D8D8D;
+  margin-bottom: 28px;
+}
+
+.member-func .member-func-item {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8D8D8D;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding: 2px 0;
+  margin-bottom: 24px;
+}
+
+.member-func .member-func-item:hover {
+  color: #707070;
+  border-bottom: 2px solid #AC8A46;
+}
+
+@media (max-width: 991px) {
+  .member-func .member-func-item {
+    width: 33%;
+  }
+}
+
+.func-detail-title {
+  border-bottom: 1px solid #818A91;
+}
+
+.func-detail-title .txt {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.func-detail .change-pwd-title {
+  border-bottom: 1px solid #818A91;
+}
+
+.func-detail .change-pwd-title .txt {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.func-detail-content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  list-style: none;
+  padding: 10px 0;
+  color: #818A91;
+}
+
+@media (max-width: 767px) {
+  .func-detail-content .item {
+    width: 100%;
+  }
+}
+
+.func-detail-content .item h3 {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.func-detail-content .item p {
+  display: inline-block;
+}
+
+.func-detail-content .item input, .func-detail-content .item select {
+  padding: 8px;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  color: #818A91;
+}
+
+.change-pwd-content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  list-style: none;
+  padding: 10px 0;
+  color: #818A91;
+}
+
+@media (max-width: 767px) {
+  .change-pwd-content .item {
+    width: 100%;
+  }
+}
+
+.change-pwd-content .item input, .change-pwd-content .item select {
+  padding: 8px;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  color: #818A91;
+}
+
+.member-btn {
+  color: #FFF;
+  background: #916000;
+  border: 1px solid #916000;
+  border-radius: 4px;
+  padding: 8px 48px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.member-btn:hover {
+  color: #FFF;
+  background: #694600;
+}
+
+.record .member-id-group {
+  color: #818A91;
+}
+
+.record .member-id-group i {
+  display: inline-block;
+  color: black;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.record .member-id-group .member-id-title {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.record .member-id-group .member-id {
+  font-size: 20px;
+  color: #8D8D8D;
+  font-weight: 600;
+}
+
+.record .member-record-group .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  color: #818A91;
+}
+
+.record .member-record-group .item .item-title {
+  width: 40%;
+  font-size: 16px;
+}
+
+.record .member-record-group .item .item-content {
+  width: 60%;
+  font-size: 16px;
+}
+
+.record .member-record-group .item .item-ps {
+  width: 100%;
+  font-size: 14px;
+  color: #A5A5A5;
+}
+
+.item-content-ml25p {
+  margin-left: 25%;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "\2714";
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  display: inline-block;
+  width: 25px;
+  padding-left: 5px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: #916000;
+  color: #FFF;
 }
 
 .productlist {
