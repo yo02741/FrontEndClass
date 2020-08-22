@@ -11276,7 +11276,7 @@ a {
   width: 60%;
   font-size: 16px;
   color: #8D8D8D;
-  padding: 20px 0 20px 16px;
+  padding: 20px 16px;
   border: 2px solid #916000;
   border-radius: 4px;
 }
@@ -11313,6 +11313,8 @@ a {
   padding: 14px;
   color: #FFF;
   font-size: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .brand-nav .brand-item:hover {
@@ -11534,6 +11536,14 @@ a {
   border-bottom: 5px solid #916000;
 }
 
+.product-rec a:hover .pic .overlay {
+  opacity: .3;
+}
+
+.product-rec a:hover .pic p {
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .product-rec a {
     margin-bottom: 32px;
@@ -11541,6 +11551,7 @@ a {
 }
 
 .product-rec a .pic {
+  position: relative;
   max-width: 100%;
   padding-top: 150%;
   margin-bottom: 8px;
@@ -11553,6 +11564,32 @@ a {
   .product-rec a .pic {
     padding-top: 100%;
   }
+}
+
+.product-rec a .pic .overlay {
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.product-rec a .pic p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 0;
 }
 
 .product-rec a .product-name {
